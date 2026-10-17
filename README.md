@@ -27,14 +27,28 @@ The driver has been **developed and tested on the STM32 NUCLEO-H755ZI-Q** develo
 ## Repository Structure
 
 ```
-ade9000-driver/
-├── ade9000.c
-├── ade9000.h
-├── no_os_alloc.c
-├── no_os_alloc.h
-├── no_os_util.c
-└── no_os_util.h
+.
+├── driver/
+│   ├── ade9000.c
+│   ├── ade9000.h
+│   ├── no_os_alloc.c
+│   ├── no_os_alloc.h
+│   ├── no_os_util.c
+│   └── no_os_util.h
+└── example/            → moved to js0nnn/diy-power-quality-analyzer
 ```
+
+---
+
+## See it in a real build
+
+This driver powers **[DIY Power Quality Analyzer](https://github.com/js0nnn/diy-power-quality-analyzer)**: a hand-soldered SMD ADE9000 on zero PCB, isolated from a dual-core STM32H755 that streams waveforms over SPI DMA and UART to a real-time Python GUI.
+
+<p align="center">
+  <a href="https://github.com/js0nnn/diy-power-quality-analyzer">
+    <img src="https://raw.githubusercontent.com/js0nnn/diy-power-quality-analyzer/main/docs/hardware-annotated.jpg" width="80%" alt="Annotated photo of the DIY power quality analyzer board"/>
+  </a>
+</p>
 
 ---
 
